@@ -110,30 +110,6 @@ map <C-right> <ESC>:bn<CR>
 map <C-left> <ESC>:bp<CR>
 nmap <SPACE> <C-F>
 nmap <BS> <C-B>
-noremap ,cd A<Tab>//!< 
-noremap ,co O/** @brief */<Esc>hi<cr><Esc>kA 
-
 
 vmap < <gv
 vmap > >gv
-
-
-
-nmap  <Leader>lt 0"byw"cyt;omklatex('<Esc>"cpA', <Esc>"bpA,'');<Esc>j0
-
-
-
-"html support
-"-------------------------------
-let g:html_tag_case = 'lowercase'
-let g:no_html_tab_mapping = 1
-let g:do_xhtml_mappings = 'yes'
-let use_xhtml = 'yes'
-let g:no_html_toolbar = 'yes'
-let g:no_html_menu = 'yes'
-
-
-let g:surround_61 = "<?= \r ?>"
-
-
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS
