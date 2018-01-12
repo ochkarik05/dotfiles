@@ -1,0 +1,17 @@
+- defaults:
+    link:
+        relink: true
+        create: true
+
+- clean: ['~']
+
+- link:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.ideavimrc:   
+    ~/.bashrc:
+
+- shell:
+      - [git submodule update --init --recursive, Installing submodules]
+
+
