@@ -7,13 +7,15 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.vim:
+    ~/.bash:
     ~/.vimrc:
     ~/.ideavimrc:   
     ~/.bashrc:
+    ~/.bash_aliases:
+    ~/.bash_exports:
+
 
 - shell:
       - [git submodule update --init --recursive, Installing submodules]
-
 
 # vim:ts=4:shiftwidth=4

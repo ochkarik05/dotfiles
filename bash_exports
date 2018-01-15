@@ -1,0 +1,8 @@
+#Theme
+export BASH_THEME='sexy'
+
+#Android paths
+export ANDROID_HOME=/home/vladimir/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
+# vim:ft=sh
