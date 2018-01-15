@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.dotfiles: ''
     ~/.vim:
     ~/.vimrc:
     ~/.ideavimrc:   
@@ -15,3 +16,4 @@
       - [git submodule update --init --recursive, Installing submodules]
 
 
+# vim:ts=4:shiftwidth=4
