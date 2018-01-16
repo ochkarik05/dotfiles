@@ -8,6 +8,7 @@ alias gs='git status'
 alias gss='git status -s'
 alias gc='git commit -v'
 alias gca='git commit -v -a'
+alias gl='git pull'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
