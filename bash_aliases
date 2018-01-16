@@ -3,6 +3,9 @@ gvim () { command gvim --remote-tab-silent "$@" || command gvim "$@"; }
 
 alias gcl='git clone'
 alias ga='git add'
+alias gp='git push'
+alias gs='git status'
+alias gss='git status -s'
 
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'

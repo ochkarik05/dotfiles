@@ -23,8 +23,13 @@ set keymap vi-command
 # "\033\033[B".
 # Feel free to bind to whatever you want. Delete the first '\e' in the keymap
 # to set plain up/down to do a history search by default.
-"\e\e[A": history-search-backward
-"\e\e[B": history-search-forward
+#"\e\e[A": history-search-backward
+#"\e\e[B": history-search-forward
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
+Control-N: history-search-forward 
+Control-P: history-search-backward 
+
 
 ###########################################################
 # Keymaps for when we're in insert (i.e., typing stuff in) mode
@@ -37,8 +42,10 @@ TAB: menu-complete
 "\e[Z": menu-complete-backward
 
 # Option-up/option-down should also apply to insert mode
-"\e\e[A": history-search-backward
-"\e\e[B": history-search-forward
+Control-N: history-search-forward 
+Control-P: history-search-backward 
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
 
 # Needed because binding 'p' in command mode above wipes its insert mode
 # function, too. This fixes that, and will insert 'p' when you type 'p'.
