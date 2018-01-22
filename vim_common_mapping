@@ -1,0 +1,26 @@
+
+map <C-j> 5j
+map <C-k> 5k
+map <C-l> gt
+map <C-h> gT
+noremap <CR> :
+nnoremap <leader><cr> :nohl<cr>
+nnoremap d<space> V/\S<cr>kkd:nohl<cr>
+
+noremap <leader>I ggvG=
+
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap [<space> O<esc>j
+nnoremap ]<space> o<esc>k
+
+
+
+noremap K ciw
+noremap L cw
+
+nmap <leader>[ vi{
+nmap <leader>' vi"
+
+" vim:ft=sh

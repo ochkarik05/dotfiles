@@ -33,14 +33,14 @@ set wildignore=*.bak,*.o,*.e,*~ " a file that matches with one of these
 set laststatus=2
 "set fileencodings=utf-8,cp1251,cp866
 set statusline=[pwd=%{getcwd()}]\ [FENC=%{&fileencoding}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
-set guitabtooltip=%!bufname($) "
 set guioptions-=T
 set nu
 set mousemodel=extend
 set clipboard+=unnamed
-"set go+=a
-set shellslash " win32 users will need to have 'shellslash' set so that latex can be called correctly.
-set sessionoptions=curdir,buffers,tabpages
+
+
+nnoremap <leader>vs :source ~/.vimrc<CR>
+
 
 set expandtab
 "folding settings
@@ -53,7 +53,6 @@ set foldlevelstart=1
 set encoding=utf-8
 set swb=usetab,newtab
 set nowrap
-
 
 "set completeopt-=preview
 "set completeopt+=longest
@@ -87,29 +86,12 @@ set complete+=t
 "-------------------------------------------------------------------------------
 "
 map   <silent> <F2>    :write<CR>
-map   <silent> <F3>    :NERDTreeToggle<CR>
-nmap  <silent> <F4>    :set filetype=php<CR>
-nmap  <silent> <F5>    :set filetype=html<CR>
-map   <silent> <F6>    :cp<CR>
-map   <silent> <F7>    :cn<CR>
-map   <F8>             :call ShowError()<CR>
-map   <F9>             :make<CR>
-map   <F10>            :make prog<CR>
 "
 imap  <silent> <F2>    <Esc>:write<CR>
-imap  <silent> <F3>    <Esc>:Explore<CR>
-imap  <silent> <F4>    <C-O>:set filetype=php<CR>
-imap  <silent> <F5>    <C-O>:set filetype=html<CR>
-imap  <silent> <F6>    <Esc>:cp<CR>
-imap  <silent> <F7>    <Esc>:cn<CR>
+imap  <silent> <F3>    <Esc>:Sex<CR>
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
-nmap <C-H> <C-W>h
-nmap <C-L> <C-W>l
-map <C-right> <ESC>:bn<CR>
-map <C-left> <ESC>:bp<CR>
-nmap <SPACE> <C-F>
 nmap <BS> <C-B>
 
-vmap < <gv
-vmap > >gv
+source ~/.vim_common_mapping
+

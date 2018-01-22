@@ -2,35 +2,20 @@ set clipboard=unnamed
 set hlsearch
 set ignorecase
 set smartcase
-map <C-j> 5j
-map <C-k> 5k
-map <C-l> gt
-map <C-h> gT
-set number
+
+set keymap=russian-jcukenwin          
+set iminsert=0            
+set imsearch=2            
+set iskeyword=@,48-57,_,192-255                                                                                         
+set scrolloff=3 "Count lines to keep above and below the cursor
 set surround
 set scrolloff=3
-noremap <CR> :
-nnoremap <Space>vs :source ~/.ideavimrc<CR>
-nnoremap <space><cr> :nohl<cr>
-nnoremap d<space> V/\S<cr>kkd:nohl<cr>
 
-noremap <Space>I ggvG=
-
-vnoremap < <gv
-vnoremap > >gv
-
-imap ii <Esc>
-
-nnoremap [<space> O<esc>j
-nnoremap ]<space> o<esc>k
-
-nmap <Space>[ vi{
-nmap <Space>' vi"
+nnoremap <leader>vs :source ~/.ideavimrc<CR>
 
 nnoremap / :action Find<CR>
 nnoremap n :action FindNext<CR>
 nnoremap N :action FindPrevious<CR>
-noremap K ciw
 map й q
 map ц w
 map у e
@@ -97,3 +82,5 @@ map Ь M
 map Б <
 map Ю >
 map Ё /|
+
+source ~/.vim_common_mapping
