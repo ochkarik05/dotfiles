@@ -7,7 +7,7 @@ noremap <CR> :
 nnoremap <leader><cr> :nohl<cr>
 nnoremap d<space> V/\S<cr>kkd:nohl<cr>
 
-noremap <leader>I ggvG=
+noremap <leader>I mmggvG=`m
 
 vnoremap < <gv
 vnoremap > >gv
