@@ -8,6 +8,10 @@
 - link:
     ~/.dotfiles: ''
     ~/.bash:
+    ~/.vim:
+        create: true
+        force: true
+        path: vim
     ~/.vimrc:
     ~/.ideavimrc:   
     ~/.inputrc:   
