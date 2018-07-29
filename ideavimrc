@@ -2,6 +2,7 @@ set clipboard=unnamed
 set hlsearch
 set ignorecase
 set smartcase
+set history=10000
 
 set keymap=russian-jcukenwin          
 set iminsert=0            
