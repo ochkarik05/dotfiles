@@ -10,7 +10,18 @@ set imsearch=2
 set iskeyword=@,48-57,_,192-255                                                                                         
 set scrolloff=3 "Count lines to keep above and below the cursor
 set surround
+set muliple-cusrors
+set commentary
 set scrolloff=3
+
+#noremap <leader>I mmggvG=`m
+noremap <leader>I :action ReformatCode<CR>
+
+
+inoremap <A-j> <Esc>:m .+1<CR>==gi
+nnoremap <A-k> :m .-2<CR>==
+nnoremap <A-j> :m .+1<CR>==
+inoremap <A-k> <Esc>:m .-2<CR>==gi
 
 nnoremap <leader>vs :source ~/.ideavimrc<CR>
 
@@ -29,8 +40,8 @@ map щ o
 map з p
 map х [
 map ъ ]
-map ф a
 map ы s
+map ф a
 map в d
 map а f
 map п g
