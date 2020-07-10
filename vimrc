@@ -95,3 +95,10 @@ nmap <BS> <C-B>
 
 source ~/.vim_common_mapping
 
+call plug#begin('~/.vim/plugged')
+
+Plug 'meain/vim-colorswitch'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+
+call plug#end()

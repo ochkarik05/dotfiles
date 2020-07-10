@@ -25,9 +25,7 @@ inoremap <A-k> <Esc>:m .-2<CR>==gi
 
 nnoremap <leader>vs :source ~/.ideavimrc<CR>
 
-nnoremap / :action Find<CR>
-nnoremap n :action FindNext<CR>
-nnoremap N :action FindPrevious<CR>
+
 map й q
 map ц w
 map у e
